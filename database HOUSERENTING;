@@ -1,0 +1,30 @@
+
+create database HOUSERENTING;
+
+create table CustomerDetail
+(
+customerID varchar(20) not null unique primary key,
+first Name text not null,
+surn Name text not null,
+Address varchar(20) not null,
+Post Code varchar(10) not null,
+Town text
+);
+
+
+
+Create table RentalDetail
+(
+rent enum('Flat','House') not null,
+Number of Room int(5),
+Location text not null,
+Cost int(40) not null
+);
+
+
+create table UtilityBills
+(
+Electricity int(10) not null,
+LocalTax int(10) not null,
+WaterBill int (10) not null
+);
